@@ -1,6 +1,6 @@
 Target : 10.129.2.189
 
-Date : 24/06/2025
+Date : 24/06/2026
 
 Only information given in Adventure Mode (Black Box mode in HTB) : 'The User flag for this Box is located in a non-standard directory, C:\share\transfer.'
 
