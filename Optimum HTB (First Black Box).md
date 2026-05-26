@@ -1,6 +1,6 @@
 Target : 10.129.37.65
 
-Full Black Box Engagement
+Date : 20/05/2026
 
 ```bash
 >  sudo echo "10.129.37.65 optimum.htb" | sudo tee -a /etc/hosts  
