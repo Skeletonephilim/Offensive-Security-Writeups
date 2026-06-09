@@ -568,7 +568,7 @@ Mode                 LastWriteTime         Length Name
   
   
 *Evil-WinRM* PS C:\Users\N.Thompson\Desktop> cat user.txt  
-351138f86316937ff8452b2d57794b80
+3511*************d57794b80
 ```
 
 And we got the user flag !
@@ -948,7 +948,7 @@ Mode                 LastWriteTime         Length Name
   
   
 *Evil-WinRM* PS C:\Users\Administrator\Desktop> cat root.txt  
-81a730a537e03943ea48a9d11ad7471f
+81*******************d7471f
 ```
 
 And we finally got the root flag !
