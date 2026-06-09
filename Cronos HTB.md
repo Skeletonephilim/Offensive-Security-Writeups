@@ -267,7 +267,7 @@ www-data@cronos:/var/www/admin$ cd /home/noulis
 cd /home/noulis  
 www-data@cronos:/home/noulis$ cat user.txt  
 cat user.txt  
-78e7373bf37f14c23105854d24cbe325
+78e7*****************4cbe325
 ```
 
 Since its name is Cronos, we can infer that the privesc is about cronjobs.
@@ -416,7 +416,7 @@ bash: cannot set terminal process group (4074): Inappropriate ioctl for device
 bash: no job control in this shell  
 root@cronos:~# cat /root/root.txt  
 cat /root/root.txt  
-5003f0ff75662ef462532ab8aee0d9c3
+5003f0***********ee0d9c3
 ```
 
 And we get the root flag !
