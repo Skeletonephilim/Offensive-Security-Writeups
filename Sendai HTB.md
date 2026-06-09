@@ -1013,7 +1013,7 @@ d-----         8/18/2025   5:04 AM                Windo
   
   
 *Evil-WinRM* PS C:\> cat user.txt  
-fff335936142d21a6fa44123b897cd3e
+fff3359************7cd3e
 ```
 
 And we got the user flag !
@@ -1501,7 +1501,7 @@ Mode                 LastWriteTime         Length Name
   
   
 *Evil-WinRM* PS C:\Users\Administrator\Desktop> cat root.txt  
-1bc134a7b4ae19fcc072082026d991cf
+1bc******************91cf
 ```
 
 And we got root !
