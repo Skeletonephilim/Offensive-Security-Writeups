@@ -806,7 +806,7 @@ And we got foothold.
 takis@tenten:~$ ls  
 user.txt  
 takis@tenten:~$ cat user.txt  
-aa1bbd7289a3a11a24f47dd570bda3e2
+aa1bbd*************70bda3e2
 ```
 
 Nothing here but the user flag, it seems.
@@ -830,7 +830,7 @@ root@tenten:/# ls
 bin  boot  dev  etc  home  initrd.img  lib  lib32  lib64  libx32  lost+found  media  mnt  opt  proc  root  run  sbin  snap  srv  sys  tmp  usr  var  vmlinuz  
 root@tenten:/# cd /root/  
 root@tenten:/root# cat root.txt  
-cbe73f8a36ca3825e126ae095e021285
+cbe73f8*************5e021285
 ```
 I took a nap between user and flag, expecting more friction, I didn't expect the privilege escalation to be so fast.
 ```
