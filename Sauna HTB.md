@@ -1188,7 +1188,7 @@ Directory of C:\Users\Administrator\Desktop
               2 Dir(s)   7,807,094,784 bytes free
               
 C:\Users\Administrator\Desktop> type root.txt  
-246a0d4421d51ee230223ef98b586e24          
+246a0d************8b586e24          
 ```
 
 And we got the root flag.
