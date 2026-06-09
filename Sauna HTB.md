@@ -755,7 +755,7 @@ Mode                LastWriteTime         Length Name
   
   
 *Evil-WinRM* PS C:\Users\FSmith\Desktop> cat user.txt  
-40df63de1a116ee304c2f7cbc07df1f0
+40d***************f1f0
 ```
 
 And we got the user flag.
