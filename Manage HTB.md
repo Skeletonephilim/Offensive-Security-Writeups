@@ -375,7 +375,7 @@ And after a few seconds, it spits the location and we get the user flag :
 ```bash
 ./opt/tomcat/user.txt  
 [tomcat@10.129.234.57 /]$ cat ./opt/tomcat/user.txt  
-a86d44c7243b65a9171cf7da3e0bc279
+a8****************bc279
 ```
 
 We got the user flag on tomcat.
@@ -681,7 +681,7 @@ And we got `admin` rights. Maybe it's because we created the `admin` group with 
 
 ```bash
 admin@manage:/$ sudo cat /root/root.txt
-b3645b7e6db6d5276ad33f0c75b8dc34
+b364**************b8dc34
 ```
 
 And we got the root flag.
