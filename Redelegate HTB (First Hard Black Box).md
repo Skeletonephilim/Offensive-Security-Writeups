@@ -718,7 +718,7 @@ Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplay
 Info: Establishing connection to remote endpoint  
 /usr/share/evil-winrm/vendor/bundle/ruby/3.4.0/gems/rexml-3.4.4/lib/rexml/xpath.rb:67: warning: REXML::XPath.each, REXML::XPath.first, REXML::XPath.match dropped support for nodeset...  
 *Evil-WinRM* PS C:\Users\Helen.Frost\Documents> type /Users/Helen.Frost/Desktop/user.txt  
-b7f809d0ef34cbb17a5de4952b89f3f5
+b7f809d0e**********9f3f5
 ```
 
 User flag.
@@ -893,7 +893,7 @@ Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplay
                                           
 Info: Establishing connection to remote endpoint  
 *Evil-WinRM* PS C:\Users\Administrator\Documents> type /Users/Administrator/Desktop/root.txt  
-b38e079e4a7b435ec9eb5a96cf05a619
+b38e*************619
 ```
 
 First Hard box rooted !
