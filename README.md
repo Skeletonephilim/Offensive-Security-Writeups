@@ -20,8 +20,15 @@ Not every box is a full DC compromise chain. Some stop at interesting identity p
 - **AI-assisted:** I use AI for explanation, syntax breakdown, methodology checks, and occasional unblocks — not to replace my own recon.
 - **Redacted:** flags, passwords, hashes, and reusable secrets are stripped. Commands and reasoning stay.
 
-## Boxes (by difficulty)
+## Themes I keep coming back to
+- **Coercion / forced authentication** — UNC paths, Responder, `.ini` / share plants, WebDAV-style callbacks
+- **Credential reuse & spraying** — one crack → `lookupsid` / user list → `nxc smb`
+- **Share ACL truth** — verify WRITE with a real upload, not one tool's label
+- **Identity vs execution** — who *runs* the code (service account, human, App Pool) vs who *wrote* the file
+- **Token abuse** — `SeImpersonatePrivilege`, potato family, IIS `w3wp.exe` contexts
+- **Dual web stacks** — Apache/PHP vs IIS/ASPX on the same host (common on HTB Windows)
 
+## Boxes (by difficulty)
 ### Easy
 | Machine | File |
 |---------|------|
@@ -29,11 +36,21 @@ Not every box is a full DC compromise chain. Some stop at interesting identity p
 | Optimum | [Optimum [EASY].md](Optimum%20%5BEASY%5D.md) |
 | Return | [Return [EASY].md](Return%20%5BEASY%5D.md) |
 | Sauna | [Sauna [EASY].md](Sauna%20%5BEASY%5D.md) |
-
 ### Medium
 | Machine | File |
 |---------|------|
 | Administrator | [Administrator [MEDIUM].md](Administrator%20%5BMEDIUM%5D.md) |
 | BabyTwo | [BabyTwo [MEDIUM].md](BabyTwo%20%5BMEDIUM%5D.md) |
 | Breach | [Breach [MEDIUM].md](Breach%20%5BMEDIUM%5D.md) |
-| Phantom | [Phantom [M
+| Phantom | [Phantom [MEDIUM].md](Phantom%20%5BMEDIUM%5D.md) |
+| Sendai | [Sendai [MEDIUM].md](Sendai%20%5BMEDIUM%5D.md) |
+### Hard
+| Machine | File |
+|---------|------|
+| Blackfield | [Blackfield [HARD].md](Blackfield%20%5BHARD%5D.md) |
+| DarkZero | [DarkZero [HARD].md](DarkZero%20%5BHARD%5D.md) |
+| Flight | [Flight [HARD].md](Flight%20%5BHARD%5D.md) |
+| Pirate | [Pirate [HARD].md](Pirate%20%5BHARD%5D.md) |
+| Redelegate | [Redelegate [HARD].md](Redelegate%20%5BHARD%5D.md) |
+| Reel | [Reel [HARD].md](Reel%20%5BHARD%5D.md) |
+| Shibuya | [Shibuya [HARD].md](Shibuya%20%5BHARD%5D.md) |
