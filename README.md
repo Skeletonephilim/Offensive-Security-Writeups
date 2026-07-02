@@ -8,10 +8,15 @@ This repo uses **Git branches as folders**. The `main` branch is only the index 
 1. Open this repo in the browser.
 2. Top-left, click the branch dropdown (it probably says **`main`**).
 3. Pick one of:
+
 | [`Active-Directory`](https://github.com/Skeletonephilim/Offensive-Security-Writeups/tree/Active-Directory) | AD / Windows lab writeups (Administrator, Pirate, Shibuya, …) |
+
 | [`Linux`](https://github.com/Skeletonephilim/Offensive-Security-Writeups/tree/Linux) | Linux HTB writeups (Store, Jarvis lane, Cronos, …) |
-| [`Pro-Labs-/-AI-/-Miscellaneous`](https://github.com/Skeletonephilim/Offensive-Security-Writeups/tree/Pro-Labs-/-AI-/-Miscellaneous) | Pro labs, prompt injection, Mac OS + iPhone notes |
-4. The file list updates — that's the branch's "folder."
+
+| [`Pro-Labs-/-AI-/-Miscellaneous`](https://github.com/Skeletonephilim/Offensive-Security-Writeups/tree/Pro-Labs-/-AI-/-Miscellaneous) | Pro labs, prompt injection, Mac OS + iPhone notes |*
+
+
+5. The file list updates — that's the branch's "folder."
 
 **Direct links (no dropdown):**
 - AD: https://github.com/Skeletonephilim/Offensive-Security-Writeups/tree/Active-Directory  
