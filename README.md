@@ -9,7 +9,7 @@ This repo uses **Git branches as folders**. The `main` branch is only the index 
 2. Top-left, click the branch dropdown (it probably says **`main`**).
 3. Pick one of:
 
-| [`Active-Directory`](https://github.com/Skeletonephilim/Offensive-Security-Writeups/tree/Active-Directory) | AD / Windows lab writeups (Administrator, Pirate, Shibuya, …) |
+| [`Active-Directory`](https://github.com/Skeletonephilim/Offensive-Security-Writeups/tree/Active-Directory) | AD / Windows lab writeups (Sendai, Pirate, Shibuya, …) | And Purple writeups (Tombwatcher) with a lot more detail, ATT&CK, Event ID / SIEM correlation
 
 | [`Linux`](https://github.com/Skeletonephilim/Offensive-Security-Writeups/tree/Linux) | Linux HTB writeups (Store, Jarvis lane, Cronos, …) |
 
